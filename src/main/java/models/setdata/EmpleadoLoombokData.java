@@ -3,6 +3,7 @@ package models.setdata;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.cucumber.datatable.DataTable;
 import lombok.Data;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -22,5 +23,7 @@ public class EmpleadoLoombokData {
             dates.add(new ObjectMapper().convertValue(map, EmpleadoLoombokData.class));
         }
         return dates;
+
     }
+
 }
